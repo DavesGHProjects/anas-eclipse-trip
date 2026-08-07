@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -10,45 +9,17 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.68}
-.hero{
-display:block;
-background:#000;
-padding:0;
-}
-.hero img{
-display:block;
-width:100%;
-height:auto;
-}
+.hero{display:block;background:#000;padding:0}
+.hero img{display:block;width:100%;height:auto}
 .kicker{font:700 .78rem/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.18em;text-transform:uppercase}
-.hero h1{font-size:clamp(2.7rem,7vw,6.2rem);line-height:.98;margin:.18em 0;max-width:1050px}
-.hero p{font:1.15rem/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:760px}
 main{max-width:1120px;margin:auto;padding:44px 26px 80px}
 .routebox,.decision{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;margin:0 0 34px}
 .routebox a,.button{display:inline-block;padding:11px 16px;background:var(--forest);color:#fff;text-decoration:none;border-radius:999px;font:600 .94rem -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.stop{background:var(--card);border-radius:18px;overflow:hidden;margin:34px 0;border:1px solid var(--line)}
-.stop img{display:block;width:100%;height:420px;object-fit:cover;background:#d9d5cc}
-.stop-content{padding:30px}
-.stop h2{font-size:2.25rem;color:var(--forest);margin:0 0 .35rem}
-.dek{font-size:1.14rem;color:#4a5551;margin-top:0}
 .callout{padding:17px 19px;border-left:5px solid var(--rust);background:#f8f2e9;margin:20px 0}
 .tip{border-left-color:var(--forest);background:#edf4f1}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
-.chip{border:1px solid var(--line);border-radius:999px;padding:6px 10px;font:600 .82rem -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#faf8f4}
-.links a{margin-right:16px}
-table{width:100%;border-collapse:collapse}
-th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-.credit{font:italic .76rem/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--muted);padding:7px 12px;background:#faf8f4}
 .footer-note{color:var(--muted);font: .88rem/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-.daynav{position:sticky;top:0;z-index:10;background:rgba(244,240,232,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:10px 20px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.daynav a{padding:8px 13px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--forest);text-decoration:none;font:700 .86rem -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-.day-divider{margin:76px 0 34px;border:0;border-top:3px double var(--line)}
-.timeline td:first-child{white-space:nowrap;font-weight:700;color:var(--forest)}
-@media(max-width:720px){.grid{grid-template-columns:1fr}.stop img{height:260px}main{padding:26px 14px 60px}}
-@media print{.hero{min-height:480px}.stop{break-inside:avoid}a{color:inherit}}
-
+@media(max-width:720px){.grid{grid-template-columns:1fr}main{padding:26px 14px 60px}}
 .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin:28px 0}
 .guide-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
 .guide-card img{width:100%;height:220px;object-fit:cover;background:#d9d5cc}
@@ -59,63 +30,26 @@ th{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 </style>
 </head>
 <body>
-<header class="hero">
-<img alt="Ana's Eclipse Trip cover artwork" src="RouteGuideHeader2.jpg"/>
-</header>
+<header class="hero"><img alt="Ana's Eclipse Trip cover artwork" src="RouteGuideHeader2.jpg"/></header>
 <main>
 <section class="routebox">
 <div class="kicker" style="color:#9a5d32;">Ana's Eclipse Trip · Spain 2026</div>
 <h1 style="margin-bottom:.25rem;">Travel Guide</h1>
 <p style="font-size:1.25rem;color:#555;margin-top:0;"><em>A day-by-day guide to the family journey across Spain</em></p>
-<p>Choose a day below. Each travel day now has its own page, making the guide easier to navigate, share and expand as the itinerary develops.</p>
+<p>Choose a day below. Each travel day has its own page, making the guide easier to navigate, share and expand as the itinerary develops.</p>
 </section>
 <section class="guide-grid">
-<article class="guide-card">
-<img alt="Madrid skyline at sunrise" src="https://tse1.mm.bing.net/th?q=Madrid+Gran+Via+sunrise+cityscape&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/>
-<div><div class="kicker" style="color:#9a5d32;">Day 1 · Sunday, August 9</div><h2>Arrival in Madrid</h2><p>Two family arrivals, rental-van pickup and a deliberately gentle first afternoon for settling in, groceries and an easy neighborhood dinner.</p><a class="button" href="day-1-arrival-in-madrid.html">Open Day 1</a></div>
-</article>
-<article class="guide-card">
-<img alt="Historic Segovia" src="https://tse1.mm.bing.net/th?q=Segovia+Spain+aqueduct+Alcazar+panoramic&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/>
-<div><div class="kicker" style="color:#9a5d32;">Day 2 · Monday, August 10</div><h2>Madrid to Riaza</h2><p>Roman engineering, medieval villages, limestone canyons and arrival in the mountain town of Riaza.</p><a class="button" href="day-2-madrid-to-riaza.html">Open Day 2</a></div>
-</article>
-<article class="guide-card">
-<img alt="Horseback riding in the Spanish countryside" src="https://tse1.mm.bing.net/th?q=horseback+riding+Castile+Spain+countryside&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/>
-<div><div class="kicker" style="color:#9a5d32;">Day 3 · Tuesday, August 11</div><h2>Riaza &amp; Christian’s Birthday</h2><p>A slow morning at La Casa Campo, followed by a 2:15 PM birthday celebration for Christian at Caballos La Vereda—and a reminder that the eclipse is tomorrow.</p><a class="button" href="day-3-riaza-birthday.html">Open Day 3</a></div>
-</article>
-<article class="guide-card">
-<img alt="Total solar eclipse over Spain" src="https://tse4.mm.bing.net/th?q=total+solar+eclipse+Spain+landscape&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/>
-<div><div class="kicker" style="color:#9a5d32;">Day 4 · Wednesday, August 12</div>
-<h2>Eclipse Day &amp; Ana's Birthday</h2>
-<p>The big day: <strong>Ana's Birthday!</strong> Oh, and there's an eclipse. Expect a delightfully chaotic day as we run around like headless chickens before heading out to find a clear western horizon for the evening's celestial show. Eclipse begins at <strong>7:35 PM</strong>, reaches maximum at <strong>8:30 PM</strong> (1m 35s of totality), ends at <strong>9:23 PM</strong>, with sunset at <strong>9:18 PM</strong>.</p>
-<a class="button" href="day-4-eclipse-day.html">Open Day 4</a></div>
-</article>
-<article class="guide-card"><img alt="Riaza plaza" src="https://tse1.mm.bing.net/th?q=Riaza+Spain+plaza+mayor+summer&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/>
-<div><div class="kicker" style="color:#9a5d32;">Day 5 · Thursday, August 13</div>
-<h2>Post‑Eclipse in Riaza</h2>
-<p>Something will happen today... wonder what? After last night's unforgettable eclipse, the agenda is refreshingly simple: sleep in a little, relive the photos over breakfast, and enjoy Riaza at its own unhurried pace. Thursday is market day, cafés spill into the plaza, and the Sierra air is perfect for a leisurely wander. If there is a celebration today, it's for shared memories rather than celestial events.</p>
-<div class="callout tip"><strong>Today's mission:</strong> Compare eclipse photos, vote on the best "diamond ring" shot, and savor the rare feeling of having nowhere urgent to be.</div>
-<a class="button" href="day-5-post-eclipse.html">Open Day 5</a></div></article><article class="guide-card">
-<img alt="Waterfall at Orbaneja del Castillo" src="https://tse1.mm.bing.net/th?q=Orbaneja+del+Castillo+waterfall+village+Spain&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/>
-<div><div class="kicker" style="color:#9a5d32;">Day 6 · Friday, August 14</div><h2>Riaza to Santander</h2><p>A waterfall-village lunch, the Altamira Neocave and an evening arrival on the Cantabrian coast.</p><a class="button" href="day-6-riaza-to-santander.html">Open Day 6</a></div>
-</article>
-
-<article class="guide-card">
-<img alt="Santander beach and waterfront" src="https://tse1.mm.bing.net/th?q=Playa+del+Sardinero+Santander+Spain+panoramic&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/>
-<div><div class="kicker" style="color:#9a5d32;">Day 7 · Saturday, August 15</div><h2>Santander &amp; Norita’s Birthday</h2><p>A flexible beach day in Santander, followed by Norita’s special 8:30 PM birthday dinner at El Serbal.</p><a class="button" href="day-7-santander-noritas-birthday.html">Open Day 7</a></div>
-</article>
-<article class="guide-card">
-<img alt="Sanctuary of Covadonga in Asturias" src="https://tse1.mm.bing.net/th?q=Sanctuary+of+Covadonga+Basilica+Asturias+Spain&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/>
-<div><div class="kicker" style="color:#9a5d32;">Day 8 · Sunday, August 16</div><h2>Following the Family Name into Asturias</h2><p>A 12:45 PM visit to El Pendo, then a featured family route through Tarano and Covadonga—or an alternate coastal route via Gaudí, beaches or Santoña anchovies—before arriving in Gijón.</p><a class="button" href="day-8-santander-to-gijon.html">Open Day 8</a></div>
-</article>
-
-<article class="guide-card">
-<img alt="Gijón beach and Cimavilla" src="https://tse1.mm.bing.net/th?q=Gijon+San+Lorenzo+Beach+Cimavilla+Asturias&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/>
-<div><div class="kicker" style="color:#9a5d32;">Day 9 · Monday, August 17</div><h2>Asturias at Leisure</h2><p>A relaxed Gijón day of San Lorenzo, Cimavilla, Asturian cider and one optional afternoon attraction.</p><a class="button" href="day-9-gijon.html">Open Day 9</a></div>
-</article>
-<article class="guide-card">
-<img alt="León Cathedral" src="https://tse1.mm.bing.net/th?q=Leon+Spain+Gothic+Cathedral+old+town&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/>
-<div><div class="kicker" style="color:#9a5d32;">Day 10 · Tuesday, August 18</div><h2>Gijón to León</h2><p>Choose a direct, leisurely arrival in León or a weather-dependent final excursion into the Picos de Europa.</p><a class="button" href="day-10-gijon-to-leon.html">Open Day 10</a></div>
-</article>
+<article class="guide-card"><img alt="Madrid skyline at sunrise" src="https://tse1.mm.bing.net/th?q=Madrid+Gran+Via+sunrise+cityscape&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/><div><div class="kicker" style="color:#9a5d32;">Day 1 · Sunday, August 9</div><h2>Arrival in Madrid</h2><p>Two family arrivals, rental-van pickup and a deliberately gentle first afternoon for settling in, groceries and an easy neighborhood dinner.</p><a class="button" href="day-1-arrival-in-madrid.html">Open Day 1</a></div></article>
+<article class="guide-card"><img alt="Historic Segovia" src="https://tse1.mm.bing.net/th?q=Segovia+Spain+aqueduct+Alcazar+panoramic&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/><div><div class="kicker" style="color:#9a5d32;">Day 2 · Monday, August 10</div><h2>Madrid to Riaza</h2><p>Roman engineering, medieval villages, limestone canyons and arrival in the mountain town of Riaza.</p><a class="button" href="day-2-madrid-to-riaza.html">Open Day 2</a></div></article>
+<article class="guide-card"><img alt="Horseback riding in the Spanish countryside" src="https://tse1.mm.bing.net/th?q=horseback+riding+Castile+Spain+countryside&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/><div><div class="kicker" style="color:#9a5d32;">Day 3 · Tuesday, August 11</div><h2>Riaza &amp; Christian’s Birthday</h2><p>A slow morning at La Casa Campo, followed by a 2:15 PM birthday celebration for Christian at Caballos La Vereda—and a reminder that the eclipse is tomorrow.</p><a class="button" href="day-3-riaza-birthday.html">Open Day 3</a></div></article>
+<article class="guide-card"><img alt="Total solar eclipse over Spain" src="https://tse4.mm.bing.net/th?q=total+solar+eclipse+Spain+landscape&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/><div><div class="kicker" style="color:#9a5d32;">Day 4 · Wednesday, August 12</div><h2>Eclipse Day &amp; Ana's Birthday</h2><p>The big day: <strong>Ana's Birthday!</strong> Oh, and there's an eclipse. Maximum is at <strong>8:30 PM</strong>, with 1m 35s of totality.</p><a class="button" href="day-4-eclipse-day.html">Open Day 4</a></div></article>
+<article class="guide-card"><img alt="Riaza plaza" src="https://tse1.mm.bing.net/th?q=Riaza+Spain+plaza+mayor+summer&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/><div><div class="kicker" style="color:#9a5d32;">Day 5 · Thursday, August 13</div><h2>Post‑Eclipse in Riaza</h2><p>A deliberately slow day for comparing eclipse photos, enjoying the plaza and letting Riaza set the pace.</p><a class="button" href="day-5-post-eclipse.html">Open Day 5</a></div></article>
+<article class="guide-card"><img alt="Waterfall at Orbaneja del Castillo" src="https://tse1.mm.bing.net/th?q=Orbaneja+del+Castillo+waterfall+village+Spain&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/><div><div class="kicker" style="color:#9a5d32;">Day 6 · Friday, August 14</div><h2>Riaza to Santander</h2><p>A waterfall-village lunch, the Altamira Neocave and an evening arrival on the Cantabrian coast.</p><a class="button" href="day-6-riaza-to-santander.html">Open Day 6</a></div></article>
+<article class="guide-card"><img alt="Santander beach and waterfront" src="https://tse1.mm.bing.net/th?q=Playa+del+Sardinero+Santander+Spain+panoramic&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/><div><div class="kicker" style="color:#9a5d32;">Day 7 · Saturday, August 15</div><h2>Santander &amp; Norita’s Birthday</h2><p>A flexible beach day in Santander, followed by Norita’s special 8:30 PM birthday dinner at El Serbal.</p><a class="button" href="day-7-santander-noritas-birthday.html">Open Day 7</a></div></article>
+<article class="guide-card"><img alt="Sanctuary of Covadonga in Asturias" src="https://tse1.mm.bing.net/th?q=Sanctuary+of+Covadonga+Basilica+Asturias+Spain&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/><div><div class="kicker" style="color:#9a5d32;">Day 8 · Sunday, August 16</div><h2>Following the Family Name into Asturias</h2><p>A 12:45 PM visit to El Pendo, then a featured family route through Tarano and Covadonga—or an alternate coastal route—before Gijón.</p><a class="button" href="day-8-santander-to-gijon.html">Open Day 8</a></div></article>
+<article class="guide-card"><img alt="Gijón beach and Cimavilla" src="https://tse1.mm.bing.net/th?q=Gijon+San+Lorenzo+Beach+Cimavilla+Asturias&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/><div><div class="kicker" style="color:#9a5d32;">Day 9 · Monday, August 17</div><h2>Asturias at Leisure</h2><p>A relaxed Gijón day of San Lorenzo, Cimavilla, Asturian cider and one optional afternoon attraction.</p><a class="button" href="day-9-gijon.html">Open Day 9</a></div></article>
+<article class="guide-card"><img alt="León Cathedral" src="https://tse1.mm.bing.net/th?q=Leon+Spain+Gothic+Cathedral+old+town&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/><div><div class="kicker" style="color:#9a5d32;">Day 10 · Tuesday, August 18</div><h2>Gijón to León</h2><p>Choose a direct, leisurely arrival in León or a weather-dependent final excursion into the Picos de Europa.</p><a class="button" href="day-10-gijon-to-leon.html">Open Day 10</a></div></article>
+<article class="guide-card"><img alt="León Cathedral stained glass" src="https://tse1.mm.bing.net/th?q=Leon+Spain+Cathedral+stained+glass+interior&amp;w=1000&amp;h=600&amp;c=7&amp;rs=1&amp;p=0"/><div><div class="kicker" style="color:#9a5d32;">Day 11 · Wednesday, August 19</div><h2>León toward Madrid</h2><p>A proper morning in León, then back toward Madrid—with an optional western detour to Hospital de Órbigo and Veguellina de Órbigo.</p><a class="button" href="day-11-leon-to-madrid.html">Open Day 11</a></div></article>
 </section>
 <section class="routebox"><h2>More days to come</h2><p>Future days can be added here as separate pages without making any one page unwieldy.</p><p class="footer-note">Keep <code>index.html</code>, all day pages and <code>RouteGuideHeader2.jpg</code> together in the root of the GitHub repository.</p></section>
 </main>
